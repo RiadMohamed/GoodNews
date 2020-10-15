@@ -12,6 +12,7 @@
 		0C248A282538CDA700C93254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C248A262538CDA700C93254 /* Main.storyboard */; };
 		0C248A2A2538CDB200C93254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C248A292538CDB200C93254 /* Assets.xcassets */; };
 		0C248A2D2538CDB200C93254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C248A2B2538CDB200C93254 /* LaunchScreen.storyboard */; };
+		0C248A442538DA6500C93254 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C248A432538DA6500C93254 /* NewsListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0C248A292538CDB200C93254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C248A2C2538CDB200C93254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C248A2E2538CDB200C93254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C248A432538DA6500C93254 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		0C248A1F2538CDA700C93254 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				0C248A462538DA9E00C93254 /* View */,
+				0C248A422538DA5200C93254 /* Controller */,
 				0C248A202538CDA700C93254 /* AppDelegate.swift */,
 				0C248A222538CDA700C93254 /* SceneDelegate.swift */,
-				0C248A262538CDA700C93254 /* Main.storyboard */,
 				0C248A292538CDB200C93254 /* Assets.xcassets */,
 				0C248A2B2538CDB200C93254 /* LaunchScreen.storyboard */,
 				0C248A2E2538CDB200C93254 /* Info.plist */,
 			);
 			path = GoodNews;
+			sourceTree = "<group>";
+		};
+		0C248A422538DA5200C93254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C248A432538DA6500C93254 /* NewsListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C248A462538DA9E00C93254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C248A262538CDA700C93254 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C248A212538CDA700C93254 /* AppDelegate.swift in Sources */,
+				0C248A442538DA6500C93254 /* NewsListTableViewController.swift in Sources */,
 				0C248A232538CDA700C93254 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
