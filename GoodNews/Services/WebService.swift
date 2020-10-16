@@ -8,14 +8,15 @@
 import Foundation
 
 class WebService {
-    func getArticles(url: URL, completionHandler: @escaping ([Any]?) ->()) {
+    func getArticles(url: URL, completionHandler: @escaping ([Article]?) ->()) {
         
         URLSession.shared.dataTask(with: url) { (data, respone, error) in
             if let error = error {
                 print(error.localizedDescription)
                 completionHandler(nil)
             } else if let safeData = data {
-                print(safeData)
+                let articles = try? JSONDecoder().decode([Article].self, from: safeData)
+                print(articles)
             }
         }.resume()
         
