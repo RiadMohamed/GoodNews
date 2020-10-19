@@ -18,10 +18,12 @@ class WebService {
                 completionHandler(nil)
             }
             if let safeData = data {
+                print(safeData)
                 do {
                     let safeArticleList = try JSONDecoder().decode(ArticleList.self, from: safeData)
                     completionHandler(safeArticleList.articles)
                 } catch let error {
+                    print("6969")
                     print(error.localizedDescription)
                     completionHandler(nil)
                 }
