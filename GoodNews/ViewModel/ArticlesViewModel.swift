@@ -9,6 +9,12 @@ import Foundation
 
 struct ArticleViewModel {
     private let article: Article
+    var title: String {
+        return self.article.title
+    }
+    var description: String {
+        return self.article.description
+    }
 }
 
 extension ArticleViewModel {
